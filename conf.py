@@ -10,7 +10,7 @@ This module allows us to set the following options
 7. Browser Type: Specify the type of browser to be used
 8. Output Type: Secify where to dump/print the output
 9. Pause playback: Pause the playback to optimise the bandwidth usage
-10. Download Video Metadata: Download video data such as number of viewers, and more
+10. Download Video Metadata: Download video data such as number of viewers, and more, if possible
 ...
 
 """
