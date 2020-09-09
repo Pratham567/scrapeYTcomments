@@ -27,12 +27,13 @@ driver = Chrome(ChromeDriverManager().install())
 wait = WebDriverWait(driver,15)
 # Open the YT video from which to gather the comments
 driver.get(YT_URL)
-for item in range(5): 
+for item in range(3): 
         # This will wait till the loading of commentsis finished
         wait.until(EC.visibility_of_element_located((By.TAG_NAME, "body"))).send_keys(Keys.END)
-        time.sleep(2)
+        time.sleep(10)
 for comment in wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#content-text"))):
-        # data.append(comment.text)
+        data.append(comment.text)
         print(comment.text)
         print("\n")
 
+print(data)
